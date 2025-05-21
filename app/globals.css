@@ -257,13 +257,16 @@ section {
 
 /* قسم البطل الفاخر مع التسجيل */
 .unified-section {
-  min-height: 100vh;
-  /* padding: 120px 5% 50px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
   border-bottom: 3px solid var(--gold);
+}
+@media (max-width: 767px) {
+  .unified-section {
+    gap: 2rem;
+  }
 }
 
 /* محتوى التسجيل المدمج */
@@ -301,6 +304,7 @@ section {
   background: rgba(197, 164, 126, 0.05);
   border-left: 3px solid var(--gold);
 }
+
 
 /* نموذج التسجيل المدمج */
 .unified-form {
@@ -455,7 +459,6 @@ footer {
 
 .exercise-card {
   background: var(--ivory);
-  width: 350px;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(10,26,47,0.1);
   transition: transform 0.2s ease;
@@ -472,7 +475,7 @@ footer {
   background: linear-gradient(135deg, var(--burgundy), var(--gold));
   padding: 1rem;
   color: white;
-  border-radius: 15px 15px 0 0;
+  /* border-radius: 15px 15px 0 0; */
 }
 
 .exercise-title {
